@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — Ticket Watch for Discord</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  code { background: #f2f2f2; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+  .updated { color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Ticket Watch for Discord</h1>
+<p class="updated">Last updated: September 4, 2026</p>
+
+<p>Ticket Watch for Discord ("the extension") is a browser extension built for internal use by a small team to track ticket-channel activity on Discord. This policy explains what data the extension accesses, how it is used, and how it is stored.</p>
+
+<h2>What the extension does</h2>
+<p>The extension runs on <code>discord.com/channels/*</code> pages. It reads channel names and timestamps visible on the page to detect when new ticket channels are created, lets a user set a short status message, and calculates daily/weekly ticket counts from that data.</p>
+
+<h2>What data is collected</h2>
+<ul>
+  <li><strong>Website content:</strong> Channel names and creation timestamps read from Discord pages the user is viewing, used solely to detect and log ticket activity.</li>
+  <li><strong>User-provided status text:</strong> A short status string the user types themselves (e.g. "Handling tickets").</li>
+  <li><strong>Notes:</strong> Any text a user types into the shared notes field for a ticket.</li>
+</ul>
+<p>The extension does <strong>not</strong> collect passwords, private messages, direct message content, financial information, health information, or precise location data. It does not use tracking pixels, analytics SDKs, or advertising identifiers.</p>
+
+<h2>How data is stored</h2>
+<p>Data is stored in two places:</p>
+<ul>
+  <li><strong>Local browser storage</strong> (via the extension's <code>storage</code> permission), for data specific to the current user's browser.</li>
+  <li><strong>A private Supabase backend</strong> operated for this team, used so ticket timestamps and status are visible to teammates using the extension. This backend is not publicly accessible and is not shared with any third party outside the team.</li>
+</ul>
+
+<h2>How data is used</h2>
+<p>Collected data is used only to power the extension's single purpose: showing when tickets were created, letting teammates see each other's status, and displaying ticket count summaries. It is not sold, rented, or shared with advertisers or data brokers, and it is not used for any purpose unrelated to this functionality.</p>
+
+<h2>Data retention and deletion</h2>
+<p>Ticket and status data is retained for as long as needed to provide the daily/weekly summaries. A user can clear their locally stored data by removing the extension or clearing extension storage in their browser. To request deletion of data held in the team's Supabase backend, contact the extension maintainer using the details below.</p>
+
+<h2>Third parties</h2>
+<p>The only third-party service used is Supabase, which hosts the backend database for this team. No other third-party services receive data collected by this extension.</p>
+
+<h2>Changes to this policy</h2>
+<p>If how the extension handles data changes, this page will be updated and the "Last updated" date above will change accordingly.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or requests to delete your data can be sent to: <em>[insert your contact email here]</em></p>
+
+</body>
+</html>
